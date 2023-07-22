@@ -1,5 +1,9 @@
 # pico_ePaper_IDE
 
+- https://github.com/raspberrypi/pico-sdk
+- https://github.com/raspberrypi/pico-examples
+- https://www.waveshare.com/wiki/Pico-ePaper-2.13
+
 ## build to uf2
 
 After setting up the environment in .devcontainer, follow these steps:
