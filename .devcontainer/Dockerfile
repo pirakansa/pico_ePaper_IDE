@@ -1,7 +1,6 @@
-FROM alpine:3.17
+FROM alpine:3.18
 
 RUN apk update && \
-    apk upgrade && \
     apk add git \
             cmake \
             python3 \
@@ -14,7 +13,7 @@ RUN apk update && \
     adduser builder -u 1000 -D
 
 ARG SDK_PATH=/usr/share/pico_sdk
-RUN git clone --depth 1 --branch 1.5.0 https://github.com/raspberrypi/pico-sdk $SDK_PATH && \
+RUN git clone --depth 1 --branch 1.5.1 https://github.com/raspberrypi/pico-sdk $SDK_PATH && \
     cd $SDK_PATH && \
     git submodule update --init
 
