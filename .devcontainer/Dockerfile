@@ -8,6 +8,7 @@ RUN apk update && \
             bsd-compat-headers \
             newlib-arm-none-eabi \
             gcc-arm-none-eabi \
+            g++-arm-none-eabi \
             su-exec && \
     chmod +s /sbin/su-exec && \
     adduser builder -u 1000 -D

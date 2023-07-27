@@ -1,8 +1,9 @@
 # pico_ePaper_IDE
 
+- https://rptl.io/picow-connect
+- https://www.waveshare.com/wiki/Pico-ePaper-2.13
 - https://github.com/raspberrypi/pico-sdk
 - https://github.com/raspberrypi/pico-examples
-- https://www.waveshare.com/wiki/Pico-ePaper-2.13
 
 ## build to uf2
 
@@ -10,7 +11,8 @@ After setting up the environment in .devcontainer, follow these steps:
 
 ```sh
 $ git clone https://github.com/waveshare/Pico_ePaper_Code.git epaper
-$ mkdir -p build && cmake -S . -B ./build
+$ git clone https://github.com/raspberrypi/pico-examples.git examples
+$ mkdir -p build && cmake -DPICO_BOARD=pico_w -S . -B ./build
 $ make -C ./build
 ```
 
